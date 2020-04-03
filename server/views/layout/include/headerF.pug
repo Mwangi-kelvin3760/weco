@@ -1,0 +1,20 @@
+header
+    div.main-nav
+        .container
+            .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+                .col-6.col-md-4
+                  a(href="/")
+                    img(src="/image/WECOLOGO.jpg", alt="logo" class="image")
+                .col-md-8
+                    h1 Families
+                    nav.nav.justify-content-center.justify-content-md-end
+                        a.nav-link(href="/wecocubs",class=(currentPage === '/wecocubs' ? 'active' : '')) Weco Cubs
+                        a.nav-link(href="/wecoyouths",class=(currentPage === '/wecoyouths' ? 'active' : '')) Weco Youths
+                        a.nav-link(href="/wecoadults",class=(currentPage === '/wecoadults' ? 'active' : '')) Weco Adults
+
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src="/image/about.jpg", alt="About Image")
+            .col-md-7

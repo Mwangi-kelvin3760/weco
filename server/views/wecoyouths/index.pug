@@ -1,0 +1,19 @@
+extends ../layout/index
+
+block content
+    main.container.mt-5
+    h2.text-center.mb-5 Weco Youth
+        .row
+            
+            .col-md-6
+                p High schoolers and compaus students.
+                p Aged 15 to 30.
+                
+                
+            .col-md-6
+                p Families
+                a.nav-link(href="/ndovufamily",class=(currentPage === '/ndovufamily' ? 'active' : '')) The Ndovu Family
+                a.nav-link(href="/kifarufamily",class=(currentPage === '/kifarufamily' ? 'active' : '')) The Kifaru Family
+                a.nav-link(href="/nyatifamily",class=(currentPage === '/nyatifamily' ? 'active' : '')) The Nyati Family
+                a.nav-link(href="/simbafamily",class=(currentPage === '/simbafamily' ? 'active' : '')) The Simba Family
+                a.nav-link(href="/chuifamily",class=(currentPage === '/chuifamily' ? 'active' : '')) The Chui Family

@@ -1,0 +1,16 @@
+extends ../layout/index
+
+block content
+    main.container.mt-5
+        .row
+            .col-md-3
+                h1 #{pageTitle}
+                img.img-fluid(src="/image/nyatif.jpeg", alt="nyati")
+                h2 There are three stages.
+                p Each member is required to start with the Bronze stage that takes a period of 2 years.Then you advance to Silver stage that takes a period of 2 years also,and finally the Gold stage that takes a period of 3 years.
+                p Each stage has it's role. 
+            .col-md-4
+            h1 Stages.
+                a.nav-link(href="/bronze",class=(currentPage === '/bronze' ? 'active' : '')) Bronze Stage.
+                a.nav-link(href="/silver",class=(currentPage === '/silver' ? 'active' : '')) Silver Stage.
+                a.nav-link(href="/gold",class=(currentPage === '/gold' ? 'active' : '')) Gold Stage.
